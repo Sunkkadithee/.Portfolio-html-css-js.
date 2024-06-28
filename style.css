@@ -32,7 +32,7 @@ nav {
     top: 0;
     z-index: 1000; /* Ensures it stays on top of other elements */
     background-color: white; /* Ensures the background is not transparent */
-   
+    height: 17vh;
 }
 
 
@@ -89,6 +89,13 @@ a:hover {
     cursor: default;
 }
 
+.logo-link.open {
+    /* Add styles for the logo link when menu is open */
+    /* Example styles: */
+    color: red; /* Change text color */
+    font-weight: bold; /* Make text bold */
+    /* Add more styles as needed */
+}
 
 
 
@@ -168,7 +175,8 @@ section {
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
-    
+    padding-top: calc(17vh + 1rem); /* Add extra padding equivalent to navbar height */
+    margin-top: -8vh; /* Negative margin to pull the section up */
 }
 
 .section-container {
